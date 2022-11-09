@@ -1,0 +1,59 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2B2E4A;
+}
+
+.myContainer {
+    width: 55vw;
+    margin: 35px auto;
+
+}
+
+.myBox {
+    padding: 45px;
+    background-color: #53354A;
+    border-radius: 6px;
+    box-shadow: 0 0 20px 5px black;
+}
+
+.accordion>.card>.card-header {
+    background-color: #53354A;
+}
+
+.btn.btn-link {
+    color: white;
+}
+
+button {
+    background-color: #E84545 !important;
+    box-shadow: 0 0 5px black;
+    color: black !important;
+    border: 1px solid black !important;
+    padding: 10px 45px!important;
+    border-radius: 30px!important;
+}
+
+button:hover {
+    background-color: #53354A !important;
+    color: white !important;
+    border: 1px solid white !important;
+    
+}
+ 
+ 
+.card-body {
+    background-color: #a3a3a3 !important;
+}
+.card-body button:hover {
+    background-color: #a3a3a3 !important;
+    color: white !important;
+    border: 1px solid white !important;
+    
+}
+
+ 
