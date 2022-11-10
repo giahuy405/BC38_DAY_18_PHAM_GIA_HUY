@@ -23,10 +23,10 @@
             </div>
             <div class="form-group">
                 <div class="d-flex align-items-center">
-                    <input type="number" class="form-control w-25 d-inline" id="inputArr" placeholder="Nhập số n">
-                    <button class="btn btn-success ml-3" id="btnAddArray" onclick="addArr()">Thêm số</button>
+                    <input type="number" class="form-control w-25 d-inline  inputArr"   placeholder="Nhập số n">
+                    <button class="btn btn-success ml-3    btnAddArray"  onclick="addArr('.inputArr','.displayArray')">Thêm số</button>
                 </div>
-                <div class="alert alert-primary mt-3"><span>=> <span id="displayArray"></span></span></div>
+                <div class="alert alert-primary mt-3"><span>=> <span class="displayArray"></span></span></div>
             </div>
             <div class="accordion" id="accordionExample">
                 <div class="card">
@@ -109,7 +109,7 @@
                     </div>
                     <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordionExample">
                         <div class="card-body">
-                            <button class="btn btn-secondary" id="ex5">Tìm số dương nhỏ nhất </button>
+                            <button class="btn btn-secondary" id="ex5">Tìm số chẵn cuối cùng</button>
                             <div class="alert alert-warning mt-3"><span>=> <span id="displayEx5"></span></span></div>
                         </div>
                     </div>
@@ -164,7 +164,8 @@
                     </div>
                     <div id="collapse8" class="collapse" aria-labelledby="heading8" data-parent="#accordionExample">
                         <div class="card-body">
-                            Some placeholder content for the second accordion panel. This panel is hidden by default.
+                            <button class="btn btn-secondary" id="ex8">Tìm số nguyên tố đầu tiên</button>
+                            <div class="alert alert-warning mt-3"><span>=> <span id="displayEx8"></span></span></div>
                         </div>
                     </div>
                 </div>
@@ -179,8 +180,29 @@
                     </div>
                     <div id="collapse9" class="collapse" aria-labelledby="heading9" data-parent="#accordionExample">
                         <div class="card-body">
-                            And lastly, the placeholder content for the third and final accordion panel. This panel is
-                            hidden by default.
+                            <div class="box-hint mt-3  ">
+                                <h6>💡 Gợi ý</h6>
+                                <a class="ml-4 text-dark collapsed " data-toggle="collapse" href="#collapseExample"
+                                    role="button" aria-expanded="false" aria-controls="collapseExample">
+                                    Mở rộng để xem thêm <i class="triangle"></i>
+                                </a>
+                                <div class="collapse" id="collapseExample">
+                                    <div class="  ml-4">
+                                        <ul class="pt-3">
+                                            <li class="mb-2">Sử dụng <a href="https://www.w3schools.com/jsref/jsref_isinteger.asp">Number.isInterger</a> để kiểm tra số nguyên</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group mt-4">
+                               <div class="d-flex align-items-center">
+                                <input type="text" placeholder="Nhập số n" class="form-control mr-4 w-25     " id="inputArrEx9">
+                                <button id="btnAddArray1"  onclick="addArr9()">Thêm số</button>
+                               </div>
+                                <div class="alert alert-primary mt-3"><span>=> <span id="displayArrEx9"></span></span></div>
+                                <button id="btncountNumberInt">Đếm số nguyên</button>
+                                <div class="alert alert-warning mt-3"><span>=> <span id="displayCountNumberInt"></span></span></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -195,8 +217,8 @@
                     </div>
                     <div id="collapse10" class="collapse" aria-labelledby="heading10" data-parent="#accordionExample">
                         <div class="card-body">
-                            And lastly, the placeholder content for the third and final accordion panel. This panel is
-                            hidden by default.
+                             <button id="btnCompare">So sánh</button>
+                             <div class="alert alert-warning mt-3"><span>=> <span id="displayCompareResult"></span></span></div>
                         </div>
                     </div>
                 </div>
